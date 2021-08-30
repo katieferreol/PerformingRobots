@@ -14,3 +14,4 @@ It was definitely also eye opening to see that these autonomous performing agent
 
 1. Would it have been possible for these autonomous performing agents to cater to the audience's emotions if they were not coded properly? Would the eletronic nature prevent them from fulfilling their purpose?
 2. Performance agents are done primarily by humans who know how to gauge the reaction of their audience. In theatre or cinema, where such skill is necessary, would these autonomous agents be successful in replicating these skills?
+3. If a certain autonomous agent is in need of debugging, it is quite easy to find another replacement that could do the same. Because we are bringing these devices into a world like theatre--where actors and actresses are matched with the role--does it create a superficial and toxic nature that anyone (both human and digital) can be replaced? What can we do to avoid such thoughts?
