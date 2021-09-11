@@ -28,4 +28,4 @@ My simple "robot" is here. Click the picture to be sent to the link:
 
 **(Click the gif to be sent to the video.)**
 
-[![](images/disconnectedWires.gif)](http://youtube.com)
+[![](images/buttonMotor.gif)](http://youtube.com)
