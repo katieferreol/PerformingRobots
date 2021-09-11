@@ -12,7 +12,7 @@ After, I went to check if my first motor still worked. Because I didn't disconne
 
 However, when disconnecting the 4 wires from the IN pins, it seemed that, when I disconnected the wire in the IN4 Pin, it worked. *This is impossible,* I told myself. Is this some sort of glitch? (Click the gif to be sent to the video.)
 
-[![name](disconnectedWires.png)](https://www.youtube.com/)
+[![name](disconnectedWires.png)]
 
 However, when I looked at Discord, I saw that Yasmin had the exact same problem, and Professor pointed out a problem I also had: both my IN3 and IN4 pins were on HIGH, keeping the motor still. Through changing one of them to low, it finally got to work.
 
@@ -24,4 +24,4 @@ Lastly was adding the button. Luckily I still remembered a bit from Intro to IM,
 
 My simple "robot" is here. Click the picture to be sent to the link:
 
-[![name](buttonMotor.png)](https://www.youtube.com/)
+[![name](buttonMotor.png)]
