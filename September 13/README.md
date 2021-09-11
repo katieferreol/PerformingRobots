@@ -24,4 +24,4 @@ Lastly was adding the button. Luckily I still remembered a bit from Intro to IM,
 
 My simple "robot" is here. Click the picture to be sent to the link:
 
-![name](buttonMotor.png)
+![](buttonMotor.png)
