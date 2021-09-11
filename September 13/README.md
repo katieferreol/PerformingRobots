@@ -10,9 +10,10 @@ The first thing I did was solder a second motor. Because I wanted it to be exact
 
 After, I went to check if my first motor still worked. Because I didn't disconnect any of the wires from class, all I had to do was connect it to my laptop. However, it wasn't working. I scrambled my brain thinking of a solution: I disconnected all wires, tested the motor on the battery, and even changed the battery-wire connector. Nothing was working.
 
-However, when disconnecting the 4 wires from the IN pins, it seemed that, when I disconnected the wire in the IN4 Pin, it worked. *This is impossible,* I told myself. Is this some sort of glitch? (Click the gif to be sent to the video.)
+However, when disconnecting the 4 wires from the IN pins, it seemed that, when I disconnected the wire in the IN4 Pin, it worked. *This is impossible,* I told myself. Is this some sort of glitch?
 
-[![](images/disconnectedWires.png)](http://youtube.com)
+**(Click the gif to be sent to the video.)**
+[![](images/disconnectedWires.gif)](http://youtube.com)
 
 However, when I looked at Discord, I saw that Yasmin had the exact same problem, and Professor pointed out a problem I also had: both my IN3 and IN4 pins were on HIGH, keeping the motor still. Through changing one of them to low, it finally got to work.
 
@@ -24,4 +25,5 @@ Lastly was adding the button. Luckily I still remembered a bit from Intro to IM,
 
 My simple "robot" is here. Click the picture to be sent to the link:
 
-![](buttonMotor.png)
+**(Click the gif to be sent to the video.)**
+[![](images/disconnectedWires.gif)](http://youtube.com)
