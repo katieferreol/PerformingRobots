@@ -23,6 +23,7 @@ Using the tools from my Performing Robots didn't work because the servo horns of
 
 
 I had to get my Intro to IM kit from my storage locker to get the big, circular servo horn. After attaching the neck, this is what it now looked like: that's better!
+
 ![](images/moveHeadArm.gif)
 
 After making sure everything worked, I began with the details of the robot. For the eyes, I used push pins, and for the mouth, I cut up and stuck half of a red paperclip. For other details like the eyebrows and lips, I used a Sharpie and red pen I had in my case. I also used the wires from our kit and stuck it to the top of its head to make it look like "hair!"
@@ -37,7 +38,9 @@ I also tried adding a dress to the robot, but it proved to be quite awkward and 
 
 ## FINAL
 The final robot is below: you can click the image to be redirected to a full Youtube video of the demo.
+
 ![](images/finalRobotwithMe.gif)
 
 A gif of me and the robot looking at each other and waving to you guys :)
+
 ![](images/finalRobot.gif)
