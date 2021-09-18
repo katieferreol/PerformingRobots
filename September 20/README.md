@@ -3,6 +3,8 @@ My first robot is a sequence using two servo motors attached to a cardboard huma
 
 ## PREBUILD QUESTION: WHAT IS A ROBOT?
 
+For me, a robot is any autonomous object that can perform a certain function without the need of a human force. For example, I wouldn't call a regular vacuum cleaner a robot because yes, it has the function of cleaning, but with the help of human effort. However, a Roomba on the other hand, would be a robot. In addition, this definition is not limited to physical objects, but digital ones as well. Siri's purpose, for example, is to help users through answering questions and navigating the phone on her own.
+
 ![](images/roomba.png)
 ![](images/siriApple.png)
 
