@@ -38,8 +38,8 @@ I also tried adding a dress to the robot, but it proved to be quite awkward and 
 ## FINAL
 The final robot is below: you can click the image to be redirected to a full Youtube video of the demo.
 
-![](images/finalRobotwithMe.gif)
+![](images/finalRobot.gif)
 
 A gif of me and the robot looking at each other and waving to you guys :)
 
-![](images/finalRobot.gif)
+![](images/finalRobotwithMe.gif)
