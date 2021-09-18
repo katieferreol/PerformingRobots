@@ -53,7 +53,7 @@ I also tried adding a dress to the robot, but it proved to be quite awkward and 
 The final robot is below: you can click the image to be redirected to a full Youtube video of the demo. The story of my robot is that it is a "tita" (what we call kind, old women in Tagalog) that is looking for people to say hello to! Once she sees you, she will wave at you!
 
 ![](images/tita.png)
-[![](images/finalRobot.gif)](https://youtu.be/OLYwNNNEovw)
+[![](images/finalrobot.gif)](https://youtu.be/OLYwNNNEovw)
 
 A gif of me and the robot looking at each other and waving to you guys :)
 
