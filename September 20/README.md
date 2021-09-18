@@ -1,1 +1,10 @@
-
+![](images/movingArm.gif)
+![](images/moveHeadArm.gif)
+![](images/moveArm.gif)
+![](images/fullHead.gif)
+![](images/finalRobotwithMe.gif)
+![](images/finalRobot.gif)
+![](images/robotHeadnMe.jpg)
+![](images/hairWires.jpg)
+![](images/femaleFace.jpg)
+![](images/dressDraft.jpg)
