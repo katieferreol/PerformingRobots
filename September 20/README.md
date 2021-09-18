@@ -1,7 +1,7 @@
 # ASSIGNMENT 2: OUR FIRST ROBOT
 My first robot is a sequence using two servo motors attached to a cardboard humanoid robot, making its head turn to the side (as if scanning if there are people around) and wave to its audience. This was very exciting since its the first robot I've created, and it makes me motivated to make more complex ones in the future.
 
-Here are some shortcuts: [Prebuild Question](README.md#prebuild-question-what-is-a-robot), [Worries](README.md#1-worries-for-the-project), [Initial Process](README.md#2-initial-process), [Hardships and Complexity](README.md#3-hardships-and-making-it-more-complex), [Final Demo & Story](README.md#4-final--story)
+**SHORTCUTS: [Prebuild Question](README.md#prebuild-question-what-is-a-robot), [Worries](README.md#1-worries-for-the-project), [Initial Process](README.md#2-initial-process), [Hardships and Complexity](README.md#3-hardships-and-making-it-more-complex), [Final Demo & Story](README.md#4-final--story)**
 
 ## PREBUILD QUESTION: WHAT IS A ROBOT?
 
