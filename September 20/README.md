@@ -8,8 +8,8 @@ For me, a robot is any autonomous object that can perform a certain function wit
 ![](images/roomba.png)
 ![](images/siriApple.png)
 
-## 1. WORRIES
-From the beginning, I wanted to create a humanoid robot. At the start, I didn't know if I was able to use things that we did not tackle in class, and we were only limited to the motors and wheels. I had trouble with this, because I didn't know how to create a clean robot and hide the wires, or even make it work without having to plug it into Arduino. However, after learning that I could use the servo motors, I went with those instead. 
+## 1. WORRIES FOR THE PROJECT
+From the beginning of this assignment, I knew I wanted to create a humanoid robot. At the start, I didn't know if I was able to use things that we did not tackle in class, and we were only limited to the motors and wheels. I had trouble with this, because I didn't know how to create a clean robot and hide the wires, or even make it work without having to plug it into Arduino. However, after learning that I could use the servo motors, I went with those instead. 
 
 ## 2. INITIAL PROCESS
 I first began by creating the head of the robot, which was a simple rectangle with a thing in the middle for more structure and stability.
