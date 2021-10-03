@@ -17,5 +17,5 @@ Shortcuts:
 
 ## October 3
 
-![](images/messyButton.jpg)
+![](images/messyButtons.jpg)
 ![](images/cleanButton.jpg)
