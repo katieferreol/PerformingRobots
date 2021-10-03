@@ -1,7 +1,7 @@
 # JOURNAL
 **Shortcuts: [Day 1](journal.md#october-1)**
 
-## October 1
+## DAY 1: October 1
 
 ![](images/finally.gif)
 
@@ -17,7 +17,7 @@
 ![](images/angry.jpg)
 ![](images/angry.gif)
 
-## October 3
+## DAY 2: October 3
 
 ![](images/messyButtons.jpg)
 ![](images/cleanButton.jpg)
