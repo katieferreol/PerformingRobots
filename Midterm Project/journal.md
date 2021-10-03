@@ -35,13 +35,10 @@ ANGRY:
 
 Finishing all of my work in my other classes, I had the whole day today to work on what I was doing wrong with my second radio. It would still heat up when I tried to run the code. So, I went to the IM Lab to get advice and realized that *MY WIRING WAS COMPLETELY BACKWARDS!*
 
-Attached is what I did, and what I was supposed to do:
+Attached is what I did, and what I was supposed to do. After finally rewiring it properly, I finally got it to work.
 
 ![](images/myVersion.jpg)
 ![](images/actualVersion.jpg)
-
-After finally rewiring it properly, I finally got it to work.
-
 ![](images/finally.gif)
 
 With now being able to clean my wires, I changed the buttons to the bigger ones from my Intro to IM kit and moved all the wires to the right so my finger won't get caught.
