@@ -8,12 +8,12 @@ Shortcuts:
 ![](images/stoic.jpg)
 ![](images/happy.jpg)
 ![](images/sad.jpg)
-![](images/stoic.jpg)
+![](images/angry.jpg)
 
 ![](images/stoic.gif)
 ![](images/happy.gif)
 ![](images/sad.gif)
-![](images/stoic.gif)
+![](images/angry.gif)
 
 ## October 3
 
