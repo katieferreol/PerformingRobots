@@ -33,6 +33,9 @@ Finishing all of my work in my other classes, I had the whole day today to work 
 
 Attached is what I did, and what I was supposed to do:
 
+![](images/myVersion.jpg)
+![](images/actualVersion.jpg)
+
 After finally rewiring it properly, I finally got it to work.
 
 ![](images/finally.gif)
