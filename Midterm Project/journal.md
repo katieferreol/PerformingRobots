@@ -3,7 +3,11 @@
 
 ## DAY 1: October 1
 
-Starting off this project, my two Arduinos still weren't communicating well with each other. With this said, I decided to first work on the expression of the robot, which I thought would work best with the Neopixel. I started off by first drawing a grid to determine which pixels I have to turn on.
+Starting off this project, I first created a sketch of what I want the robot to look like: I want it to use a Neopixel to show emotion, as well as evoke a different speed depending on its mood (fast for happy, back and forth for angry, etc.)
+
+![](images/sketch.jpg)
+
+During this time, my two Arduinos still weren't communicating well with each other. With this said, I decided to first work on the expression of the robot, which I thought would work best with the Neopixel. I began drawing a grid to determine which pixels I have to turn on.
 
 I created four emotion animations:
 
