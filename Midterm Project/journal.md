@@ -1,5 +1,5 @@
 # JOURNAL
-Shortcuts:
+**Shortcuts: [Day 1](journal.md#october-1)**
 
 ## October 1
 
