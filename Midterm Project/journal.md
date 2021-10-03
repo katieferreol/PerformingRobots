@@ -6,13 +6,15 @@ Shortcuts:
 ![](images/finally.gif)
 
 ![](images/stoic.jpg)
-![](images/happy.jpg)
-![](images/sad.jpg)
-![](images/angry.jpg)
-
 ![](images/stoic.gif)
+
+![](images/happy.jpg)
 ![](images/happy.gif)
+
+![](images/sad.jpg)
 ![](images/sad.gif)
+
+![](images/angry.jpg)
 ![](images/angry.gif)
 
 ## October 3
