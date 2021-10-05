@@ -53,13 +53,17 @@ Taking what I learned in Professor's class, I added the Transmitter and Receiver
 ## DAY 3: October 5
 
 Today, I wanted to get to the bottom of why the delays of the emotion animations were so late after the button is pressed. However, before doing this, I created a small box for the neopixel that would serve as the "head" of the robot. I was happy with how sturdy I made it: usually my box making skills aren't that good.
+
 ![](images/neoBox.gif)
 
 Now to tackle the delayed response in the animation. Testing a few things, I noticed that my motors acted immediately after the button is pressed, and only when the neopixel animations are added do they become delayed as well.
+
 ![](images/fastMotors.gif)
 
-After discussing this with Jack, the IM instructor at the IM Lab, he said that it was most likely due to the delay function found in the neopixel animation. Together, we came up with a code that would make use of millis() instead. This is something I already tried; however, I thought the method of implementing it would be different as we are using bytes rather than numbers.
+After discussing this with Jack, he said that it was most likely due to the delay function in the neopixel animation. Together, we came up with a code that would make use of millis() instead. This is something I already tried, but I thought the method of adding it would be different as we are using bytes rather than numbers.
+
 ![](images/jackNotes.jpg)
 
-Finally, after using this code, the animations finally worked quickly! I was very happy and satisfied with how it turned out. However, one thing I am still confused about is why the radio is giving a signal of 2 even when I'm not pressing anything. This makes the neopixel stuck on the "stoic" animation and also intersect with other animations if I hold it for less than a second.
+After using this code, the animations finally worked quickly! I was very happy with how it turned out. However, one thing I am still confused about is why the radio is giving a signal of 2 even when I'm not pressing anything. This makes the neopixel stuck on the "stoic" animation and intersect with other animations if I press it for less than a second.
+
 ![](images/emotionMix.gif)
