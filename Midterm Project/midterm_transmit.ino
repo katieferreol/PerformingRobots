@@ -8,28 +8,10 @@ RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
 const byte address[6] = "00001";
 
-const int stoicPin = 1;
+const int stoicPin = 5;
 const int happyPin = 2;
 const int sadPin = 3;
 const int angryPin = 4;
-
-int value = 0;
-
-//declaring states of buttons
-int stoicState = 0;
-int happyState = 0;
-int sadState = 0;
-int angryState = 0;
-
-//variables needed for state reading
-int stoicPrevious = 0;
-int stoicPush = 0;
-int happyPrevious = 0;
-int happyPush = 0;
-int sadPrevious = 0;
-int sadPush = 0;
-int angryPrevious = 0;
-int angryPush = 0;
 
 void setup() {
   Serial.begin(115200);
