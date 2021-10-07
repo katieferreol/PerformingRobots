@@ -13,13 +13,27 @@ RF24 radio(CEPIN, CSNPIN);
 
 const byte address[6] = "00001";
 
-#define LED_PIN    6
+const int motor1pin1 = 4;
+const int motor1pin2 = 5;
+const int motor2pin1 = 6;
+const int motor2pin2 = 7;
+
+float startTime;
+boolean isActive = false;
+int currentFrame = 0;
+
+#define LED_PIN    3
 
 #define LED_COUNT 64
 
 Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRB + NEO_KHZ800);
 
 void setup() {
+  pinMode(motor1pin1, OUTPUT);
+  pinMode(motor1pin2, OUTPUT);
+  pinMode(motor2pin1, OUTPUT);
+  pinMode(motor2pin2, OUTPUT);
+
 #if defined(__AVR_ATtiny85__) && (F_CPU == 16000000)
   clock_prescale_set(clock_div_1);
 #endif
@@ -49,9 +63,7 @@ void loop() {
   if (radio.available(&pipeNum))
   {
     int data;
-    radio.read(&data, sizeof(data));  //Reading the data
-    //Serial.print("data = ");
-    //Serial.println(data);
+    radio.read(&data, sizeof(data));
     startShow(data);
   } else {
     stop();
@@ -60,193 +72,229 @@ void loop() {
 
 
 void startShow(int i) {
-    switch (i) {
-        break;
-      case 2:
-        Serial.println("stoic");
-        stoic(strip.Color(255, 255, 255), 1000);
-        break;
-      case 6:
-        Serial.println("happy");
-        happy(strip.Color(255, 255, 0), 1000);
-        break;
-      case 10:
-        Serial.println("sad");
-        sad(strip.Color(0, 0, 255), 1000);
-        break;
-      case 18:
-        Serial.println("angry");
-        angry(strip.Color(255, 0, 0), 1000);
-        break;
-    }
+  switch (i) {
+      break;
+    case 2:
+      Serial.println("stoic");
+      if (isActive == false) {
+        startTime = millis();
+        isActive = true;
+        currentFrame = 0;
+      }
+      if (millis() > startTime + 1000) {
+        currentFrame = 1 - currentFrame;
+        startTime = millis();
+      }
+      if (currentFrame == 0) {
+        strip.setPixelColor(9, 255, 255, 255);
+        strip.setPixelColor(10, 255, 255, 255);
+        strip.setPixelColor(11, 255, 255, 255);
+        strip.setPixelColor(13, 255, 255, 255);
+        strip.setPixelColor(14, 255, 255, 255);
+        strip.setPixelColor(15, 255, 255, 255);
+        strip.setPixelColor(18, 255, 255, 255);
+        strip.setPixelColor(22, 255, 255, 255);
+
+        strip.setPixelColor(41, 255, 255, 255);
+        strip.setPixelColor(42, 255, 255, 255);
+        strip.setPixelColor(43, 255, 255, 255);
+        strip.setPixelColor(44, 255, 255, 255);
+        strip.setPixelColor(45, 255, 255, 255);
+        strip.setPixelColor(46, 255, 255, 255);
+        strip.setPixelColor(47, 255, 255, 255);
+        strip.show();
+        strip.clear();
+      } else {
+        strip.setPixelColor(9, 255, 255, 255);
+        strip.setPixelColor(10, 255, 255, 255);
+        strip.setPixelColor(11, 255, 255, 255);
+        strip.setPixelColor(13, 255, 255, 255);
+        strip.setPixelColor(14, 255, 255, 255);
+        strip.setPixelColor(15, 255, 255, 255);
+        strip.setPixelColor(19, 255, 255, 255);
+        strip.setPixelColor(23, 255, 255, 255);
+
+        strip.setPixelColor(41, 255, 255, 255);
+        strip.setPixelColor(42, 255, 255, 255);
+        strip.setPixelColor(43, 255, 255, 255);
+        strip.setPixelColor(44, 255, 255, 255);
+        strip.setPixelColor(45, 255, 255, 255);
+        strip.setPixelColor(46, 255, 255, 255);
+        strip.setPixelColor(47, 255, 255, 255);
+        strip.show();
+        strip.clear();
+      }
+      digitalWrite(motor1pin1, LOW);
+      digitalWrite(motor1pin2, LOW);
+      digitalWrite(motor2pin1, LOW);
+      digitalWrite(motor2pin2, LOW);
+      break;
+    case 4:
+      Serial.println("happy");
+      if (isActive == false) {
+        startTime = millis();
+        isActive = true;
+        currentFrame = 0;
+      }
+      if (millis() > startTime + 1000) {
+        currentFrame = 1 - currentFrame;
+        startTime = millis();
+      }
+      if (currentFrame == 0) {
+        strip.setPixelColor(10, 255, 255, 0);
+        strip.setPixelColor(14, 255, 255, 0);
+        strip.setPixelColor(17, 255, 255, 0);
+        strip.setPixelColor(19, 255, 255, 0);
+        strip.setPixelColor(21, 255, 255, 0);
+        strip.setPixelColor(23, 255, 255, 0);
+
+        strip.setPixelColor(33, 255, 255, 0);
+        strip.setPixelColor(39, 255, 255, 0);
+        strip.setPixelColor(42, 255, 255, 0);
+        strip.setPixelColor(46, 255, 255, 0);
+        strip.setPixelColor(51, 255, 255, 0);
+        strip.setPixelColor(52, 255, 255, 0);
+        strip.setPixelColor(53, 255, 255, 0);
+        strip.show();
+        strip.clear();
+      } else {
+        strip.setPixelColor(10, 255, 255, 0);
+        strip.setPixelColor(14, 255, 255, 0);
+        strip.setPixelColor(17, 255, 255, 0);
+        strip.setPixelColor(19, 255, 255, 0);
+        strip.setPixelColor(21, 255, 255, 0);
+        strip.setPixelColor(23, 255, 255, 0);
+
+        strip.setPixelColor(33, 255, 255, 0);
+        strip.setPixelColor(34, 255, 255, 0);
+        strip.setPixelColor(35, 255, 255, 0);
+        strip.setPixelColor(36, 255, 255, 0);
+        strip.setPixelColor(37, 255, 255, 0);
+        strip.setPixelColor(38, 255, 255, 0);
+        strip.setPixelColor(39, 255, 255, 0);
+        strip.setPixelColor(42, 255, 255, 0);
+        strip.setPixelColor(46, 255, 255, 0);
+        strip.setPixelColor(51, 255, 255, 0);
+        strip.setPixelColor(52, 255, 255, 0);
+        strip.setPixelColor(53, 255, 255, 0);
+        strip.show();
+        strip.clear();
+      }
+      analogWrite(motor1pin1, 100);
+      digitalWrite(motor1pin2, LOW);
+      analogWrite(motor2pin1, 100);
+      digitalWrite(motor2pin2, LOW);
+      break;
+    case 8:
+      Serial.println("sad");
+      if (isActive == false) {
+        startTime = millis();
+        isActive = true;
+        currentFrame = 0;
+      }
+      if (millis() > startTime + 1000) {
+        currentFrame = 1 - currentFrame;
+        startTime = millis();
+      }
+      if (currentFrame == 0) {
+        strip.setPixelColor(9, 0, 0, 255);
+        strip.setPixelColor(11, 0, 0, 255);
+        strip.setPixelColor(13, 0, 0, 255);
+        strip.setPixelColor(15, 0, 0, 255);
+        strip.setPixelColor(18, 0, 0, 255);
+        strip.setPixelColor(22, 0, 0, 255);
+
+        strip.setPixelColor(35, 0, 0, 255);
+        strip.setPixelColor(36, 0, 0, 255);
+        strip.setPixelColor(37, 0, 0, 255);
+        strip.setPixelColor(42, 0, 0, 255);
+        strip.setPixelColor(46, 0, 0, 255);
+        strip.setPixelColor(49, 0, 0, 255);
+        strip.setPixelColor(55, 0, 0, 255);
+        strip.show();
+        strip.clear();
+      } else {
+        strip.setPixelColor(9, 0, 0, 255);
+        strip.setPixelColor(11, 0, 0, 255);
+        strip.setPixelColor(13, 0, 0, 255);
+        strip.setPixelColor(15, 0, 0, 255);
+        strip.setPixelColor(18, 0, 0, 255);
+        strip.setPixelColor(22, 0, 0, 255);
+
+        strip.setPixelColor(35, 0, 0, 255);
+        strip.setPixelColor(36, 0, 0, 255);
+        strip.setPixelColor(37, 0, 0, 255);
+        strip.setPixelColor(43, 0, 0, 255);
+        strip.setPixelColor(45, 0, 0, 255);
+        strip.setPixelColor(51, 0, 0, 255);
+        strip.setPixelColor(52, 0, 0, 255);
+        strip.setPixelColor(53, 0, 0, 255);
+        strip.show();
+        strip.clear();
+      }
+      analogWrite(motor1pin1, 50);
+      digitalWrite(motor1pin2, LOW);
+      analogWrite(motor2pin1, 50);
+      digitalWrite(motor2pin2, LOW);
+      break;
+    case 16:
+      Serial.println("angry");
+      if (isActive == false) {
+        startTime = millis();
+        isActive = true;
+        currentFrame = 0;
+      }
+      if (millis() > startTime + 1000) {
+        currentFrame = 1 - currentFrame;
+        startTime = millis();
+      }
+      if (currentFrame == 0) {
+        strip.setPixelColor(1, 255, 0, 0);
+        strip.setPixelColor(7, 255, 0, 0);
+        strip.setPixelColor(10, 255, 0, 0);
+        strip.setPixelColor(14, 255, 0, 0);
+        strip.setPixelColor(19, 255, 0, 0);
+        strip.setPixelColor(21, 255, 0, 0);
+
+        strip.setPixelColor(35, 255, 0, 0);
+        strip.setPixelColor(36, 255, 0, 0);
+        strip.setPixelColor(37, 255, 0, 0);
+        strip.setPixelColor(42, 255, 0, 0);
+        strip.setPixelColor(46, 255, 0, 0);
+        strip.setPixelColor(49, 255, 0, 0);
+        strip.setPixelColor(55, 255, 0, 0);
+        strip.show();
+        strip.clear();
+      } else {
+        strip.setPixelColor(1, 255, 0, 0);
+        strip.setPixelColor(7, 255, 0, 0);
+        strip.setPixelColor(10, 255, 0, 0);
+        strip.setPixelColor(14, 255, 0, 0);
+        strip.setPixelColor(19, 255, 0, 0);
+        strip.setPixelColor(21, 255, 0, 0);
+
+        strip.setPixelColor(35, 255, 0, 0);
+        strip.setPixelColor(36, 255, 0, 0);
+        strip.setPixelColor(37, 255, 0, 0);
+        strip.setPixelColor(42, 255, 0, 0);
+        strip.setPixelColor(46, 255, 0, 0);
+        strip.setPixelColor(49, 255, 0, 0);
+        strip.setPixelColor(50, 255, 0, 0);
+        strip.setPixelColor(51, 255, 0, 0);
+        strip.setPixelColor(52, 255, 0, 0);
+        strip.setPixelColor(53, 255, 0, 0);
+        strip.setPixelColor(54, 255, 0, 0);
+        strip.setPixelColor(55, 255, 0, 0);
+        strip.show();
+        strip.clear();
+      }
+      //motor1 forward, fast
+      analogWrite(motor1pin1, 200);
+      digitalWrite(motor1pin2, LOW);
+      digitalWrite(motor2pin1, 200);
+      digitalWrite(motor2pin2, LOW);
+      break;
   }
-
-void happy(uint32_t color, int wait) {
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(17, color);
-  strip.setPixelColor(19, color);
-  strip.setPixelColor(21, color);
-  strip.setPixelColor(23, color);
-
-  strip.setPixelColor(33, color);
-  strip.setPixelColor(39, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(51, color);
-  strip.setPixelColor(52, color);
-  strip.setPixelColor(53, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(17, color);
-  strip.setPixelColor(19, color);
-  strip.setPixelColor(21, color);
-  strip.setPixelColor(23, color);
-
-  strip.setPixelColor(33, color);
-  strip.setPixelColor(34, color);
-  strip.setPixelColor(35, color);
-  strip.setPixelColor(36, color);
-  strip.setPixelColor(37, color);
-  strip.setPixelColor(38, color);
-  strip.setPixelColor(39, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(51, color);
-  strip.setPixelColor(52, color);
-  strip.setPixelColor(53, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-}
-
-void stoic(uint32_t color, int wait) {
-  strip.setPixelColor(9, color);
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(11, color);
-  strip.setPixelColor(13, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(15, color);
-  strip.setPixelColor(18, color);
-  strip.setPixelColor(22, color);
-
-  strip.setPixelColor(41, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(43, color);
-  strip.setPixelColor(44, color);
-  strip.setPixelColor(45, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(47, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-
-  strip.setPixelColor(9, color);
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(11, color);
-  strip.setPixelColor(13, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(15, color);
-  strip.setPixelColor(19, color);
-  strip.setPixelColor(23, color);
-
-  strip.setPixelColor(41, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(43, color);
-  strip.setPixelColor(44, color);
-  strip.setPixelColor(45, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(47, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-}
-
-void sad(uint32_t color, int wait) {
-  strip.setPixelColor(9, color);
-  strip.setPixelColor(11, color);
-  strip.setPixelColor(13, color);
-  strip.setPixelColor(15, color);
-  strip.setPixelColor(18, color);
-  strip.setPixelColor(22, color);
-
-  strip.setPixelColor(35, color);
-  strip.setPixelColor(36, color);
-  strip.setPixelColor(37, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(49, color);
-  strip.setPixelColor(55, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-
-  strip.setPixelColor(9, color);
-  strip.setPixelColor(11, color);
-  strip.setPixelColor(13, color);
-  strip.setPixelColor(15, color);
-  strip.setPixelColor(18, color);
-  strip.setPixelColor(22, color);
-
-  strip.setPixelColor(35, color);
-  strip.setPixelColor(36, color);
-  strip.setPixelColor(37, color);
-  strip.setPixelColor(43, color);
-  strip.setPixelColor(45, color);
-  strip.setPixelColor(51, color);
-  strip.setPixelColor(52, color);
-  strip.setPixelColor(53, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-}
-
-
-void angry(uint32_t color, int wait) {
-  strip.setPixelColor(1, color);
-  strip.setPixelColor(7, color);
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(19, color);
-  strip.setPixelColor(21, color);
-
-  strip.setPixelColor(35, color);
-  strip.setPixelColor(36, color);
-  strip.setPixelColor(37, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(49, color);
-  strip.setPixelColor(55, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
-
-  strip.setPixelColor(1, color);
-  strip.setPixelColor(7, color);
-  strip.setPixelColor(10, color);
-  strip.setPixelColor(14, color);
-  strip.setPixelColor(19, color);
-  strip.setPixelColor(21, color);
-
-  strip.setPixelColor(35, color);
-  strip.setPixelColor(36, color);
-  strip.setPixelColor(37, color);
-  strip.setPixelColor(42, color);
-  strip.setPixelColor(46, color);
-  strip.setPixelColor(49, color);
-  strip.setPixelColor(50, color);
-  strip.setPixelColor(51, color);
-  strip.setPixelColor(52, color);
-  strip.setPixelColor(53, color);
-  strip.setPixelColor(54, color);
-  strip.setPixelColor(55, color);
-  strip.show();
-  delay(wait);
-  strip.clear();
 }
 
 void stop() {
