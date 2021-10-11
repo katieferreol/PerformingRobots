@@ -1,5 +1,5 @@
 # JOURNAL
-**Shortcuts: [Day 1](journal.md#day-1-october-1), [Day 2](journal.md#day-2-october-3), [Day 3](journal.md#day-3-october-5), [Day 4](journal.md#day-4-october-6)**
+**Shortcuts: [Day 1](journal.md#day-1-october-1), [Day 2](journal.md#day-2-october-3), [Day 3](journal.md#day-3-october-5), [Day 4](journal.md#day-4-october-6), [Day 5](journal.md#day-5-october-7), [Day 6](journal.md#day-4-october-9), [Day 7](journal.md#day-4-october-11)**
 
 ## DAY 1: October 1
 
@@ -97,3 +97,27 @@ I tried my best to use carboard to connect the motors to the box, but it was jus
 ![](images/supportWheels.gif)
 
 I ended up sleeping at 2AM because I couldn't find a solution.
+
+## DAY 5: October 7
+
+On the 4th day, I decided to try get the two motors to support the box. It wasn't moving because the wheels were too close to the box, causing them to get caught and not move. I got so desperate that I even tried attaching chopsticks to the bottom that would distance the wheels away from the box (what I mean below):
+
+![](images/chopsticks.jpg)
+
+When it came to a last resort, I decided to glue the two DC motors to the side of the box. I wanted to avoid doing this because I was afraid that they would malfunction, but thankfully this did not happen.
+
+After getting the two motors to stabilize what I noticed is that the robot was still sitting akwardly, as if it's weight was not balanced. As a solution, I used the two chopsticks from before and rolls of toilet paper to stabilize the robot from the front, so it wouldn't fall when the robot stops in the Stoic animation.
+
+![](images/stabilizer.jpg)
+
+Here it is in action:
+
+![](images/smoothStop.gif)
+
+Another thing that was a quick fix was that I noticed the robot veered more to the left, which I noticed was because I used two different kinds of wheels from the kit: one was rounder than the other. I just switched one for the other and it fixed it up pretty well!
+
+![](images/differentWheels.jpg)
+
+## DAY 6: October 9
+
+## DAY 7: October 11
