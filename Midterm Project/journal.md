@@ -115,6 +115,6 @@ Another thing that was a quick fix was that I noticed the robot veered more to t
 
 ![](images/differentWheels.jpg)
 
-## DAY 6: October 9
+## DAY 6: October 11
 
-## DAY 7: October 11
+
