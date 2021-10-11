@@ -76,14 +76,12 @@ After using this code, the animations finally worked quickly! I was very happy w
 
 ## DAY 4: October 6
 
-![](images/supportWheels.gif)
-
-![](images/smileRobot.jpg)
-
-![](images/notMoving.gif)
-
-![](images/noCable.gif)
-
+![](images/cableManagement.jpg)
 ![](images/cardboardSlot.jpg)
 
-![](images/cableManagement.jpg)
+![](images/noCable.gif)
+![](images/smileRobot.jpg)
+
+![](images/supportWheels.gif)
+
+![](images/notMoving.gif)
