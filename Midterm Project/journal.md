@@ -108,7 +108,7 @@ When it came to a last resort, I decided to glue the two DC motors to the side o
 
 After getting the two motors to stabilize what I noticed is that the robot was still sitting akwardly, as if it's weight was not balanced. As a solution, I used the two chopsticks from before and rolls of toilet paper to stabilize the robot from the front, so it wouldn't fall when the robot stops in the Stoic animation.
 
-![](images/stabilizer.jpg)
+![](images/stabilizer.png)
 
 Here it is in action:
 
