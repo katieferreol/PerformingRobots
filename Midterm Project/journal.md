@@ -106,12 +106,10 @@ On the 4th day, I decided to try get the two motors to support the box. It wasn'
 
 When it came to a last resort, I decided to glue the two DC motors to the side of the box. I wanted to avoid doing this because I was afraid that they would malfunction, but thankfully this did not happen.
 
-After getting the two motors to stabilize what I noticed is that the robot was still sitting akwardly, as if it's weight was not balanced. As a solution, I used the two chopsticks from before and rolls of toilet paper to stabilize the robot from the front, so it wouldn't fall when the robot stops in the Stoic animation.
+After getting the two motors to stabilize, what I noticed is that the robot was still sitting akwardly, as if it's weight was not balanced. As a solution, I used the two chopsticks from before and rolls of toilet paper to stabilize the robot from the front, so it wouldn't fall when the robot stops in the Stoic animation.
 
 ![](images/smoothStop.gif)
-![](images/stabilizer.png)
-
-Here it is in action:
+![](images/stabilize.png)
 
 Another thing that was a quick fix was that I noticed the robot veered more to the left, which I noticed was because I used two different kinds of wheels from the kit: one was rounder than the other. I just switched one for the other and it fixed it up pretty well!
 
