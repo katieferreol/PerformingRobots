@@ -1,5 +1,5 @@
 # JOURNAL
-**Shortcuts: [Day 1](journal.md#day-1-october-1), [Day 2](journal.md#day-2-october-3), [Day 3](journal.md#day-3-october-5)**
+**Shortcuts: [Day 1](journal.md#day-1-october-1), [Day 2](journal.md#day-2-october-3), [Day 3](journal.md#day-3-october-5), [Day 4](journal.md#day-4-october-6)**
 
 ## DAY 1: October 1
 
@@ -73,3 +73,17 @@ After discussing this with Jack, he said that it was most likely due to the dela
 After using this code, the animations finally worked quickly! I was very happy with how it turned out. However, one thing I am still confused about is why the radio is giving a signal of 2 even when I'm not pressing anything. This makes the neopixel stuck on the "stoic" animation and intersect with other animations if I press it for less than a second.
 
 ![](images/emotionMix.gif)
+
+## DAY 4: October 6
+
+![](images/supportWheels.gif)
+
+![](images/smileRobot.jpg)
+
+![](images/notMoving.gif)
+
+![](images/noCable.gif)
+
+![](images/cardboardSlot.jpg)
+
+![](images/cableManagement.jpg)
