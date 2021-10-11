@@ -76,12 +76,24 @@ After using this code, the animations finally worked quickly! I was very happy w
 
 ## DAY 4: October 6
 
+I was able to fix the emotions mixing by just adding the strip.clear() function after each animation! After I got everything fixed, it was time to do my most dreaded part: putting everything inside the box and managing the cables. Hardware was never my strongest suit, so I decided to go as slowly as possible, which seemed to benefit me!
+
+My cable management was super neat (if I do say so myself) and I even made slots for certain things like the battery to avoid it from moving inside the robot.
+
 ![](images/cableManagement.jpg)
 ![](images/cardboardSlot.jpg)
+
+After I got everything nice and snug inside the box, I decided it was time to make the robot work without a cable. Using the battery and the button, I was able to get it to work: I was so happy when I succeeded, I took a picture with my new robot! :D
 
 ![](images/noCable.gif)
 ![](images/smileRobot.jpg)
 
-![](images/supportWheels.gif)
+Getting the robot to move was a big problem. I didn't take into account how heavy and big the box would be: as a result, the wheels would either fall off or not work at all. This was most likely because I put the motors inside the robot and only left the small legs outside to connect with the wheels.
 
 ![](images/notMoving.gif)
+
+I tried my best to use carboard to connect the motors to the box, but it was just too weak. To check if the wheels still worked, I had to put it on top of a toilet paper roll so the box won't rely on the wheels for its weight.
+
+![](images/supportWheels.gif)
+
+I ended up sleeping at 2AM because I couldn't find a solution.
