@@ -117,16 +117,24 @@ Another thing that was a quick fix was that I noticed the robot veered more to t
 
 ## DAY 6: October 11
 
-I was a bit confused
+I was a bit confused as to why my motors weren't working, and why only the Angry animation was working. After looking closer at my code, I noticed that the analogWrite for the angry emotion was a digitalWrite, which means it was because of the code. Now everything wasn't working. Here was my old command:
 
     analogWrite(motor1pin1, 100);
     digitalWrite(motor1pin2, LOW);
     analogWrite(motor2pin1, 100);
     digitalWrite(motor2pin2, LOW);
 
-I spent the next few minutes trying to determine which is the PWM pin and the digital pin, as those still confused me. This is what it should be:
+After looking more at Professor's advice, I realized that I mistook which were the PWM Pins (where you put the speed) I spent the next few minutes trying to determine which is the PWM pin and the digital pin, as those still confused me. This is what it should be:
     
     digitalWrite(motor1pin1, LOW);
     analogWrite(motor1pin2, 170);
     analogWrite(motor2pin1, 170);
     digitalWrite(motor2pin2, LOW);
+    
+ After fixing this, I spent a few times revising the code to fit the minimum speed the DC motors faced. Because I wanted the Sad animation to have slow wheels, I realized this wasn't possible. As a solution, I made different sequences for each emotion instead of making them just all go forward.
+
+## FINAL DEMO
+
+Finally, my project was finished! Attached below is the thumbnail, click on it to be sent to the video:
+
+https://youtu.be/ZBbjtUZc0GE
