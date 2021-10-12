@@ -137,4 +137,5 @@ After looking more at Professor's advice, I realized that I mistook which were t
 
 Finally, my project was finished! Attached below is the thumbnail, click on it to be sent to the video:
 
-https://youtu.be/ZBbjtUZc0GE
+
+[![](images/thumbnail.png)](https://youtu.be/BWFWNwsflnM)
