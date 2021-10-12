@@ -117,4 +117,16 @@ Another thing that was a quick fix was that I noticed the robot veered more to t
 
 ## DAY 6: October 11
 
+I was a bit confused
 
+    analogWrite(motor1pin1, 100);
+    digitalWrite(motor1pin2, LOW);
+    analogWrite(motor2pin1, 100);
+    digitalWrite(motor2pin2, LOW);
+
+I spent the next few minutes trying to determine which is the PWM pin and the digital pin, as those still confused me. This is what it should be:
+    
+    digitalWrite(motor1pin1, LOW);
+    analogWrite(motor1pin2, 170);
+    analogWrite(motor2pin1, 170);
+    digitalWrite(motor2pin2, LOW);
