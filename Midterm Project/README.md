@@ -9,6 +9,7 @@ My first official robot was made with the focus of exhibiting emotion. I wanted 
 - 1 External Power Supply
 
 Here was my inspiration sketch:
+
 ![](images/sketch.jpg)
 
 ## INSTRUCTIONS
