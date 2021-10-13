@@ -1,8 +1,9 @@
 # MIDTERM PROJECT: Robot with Emotion!
 
 ## SUMMARY
-My first official robot was made with the focus of exhibiting emotion. I wanted to prioritize making the construction sturdy and keep the cable management clean and easy to follow, so I took the more simple route. This makes use of:
+My first official robot was made with the focus of exhibiting emotion. I wanted to prioritize making the construction sturdy and keep the cable management clean and easy to follow, so I took the more simple route. Using the colored buttons, press each to exhibit a different emotion and see the robot move: green for stoic, yellow for happy, blue for sad, red for angry.
 
+This makes use of:
 - 1 Neopixel
 - 2 DC Motors
 - 1 H-Bridge
@@ -11,9 +12,6 @@ My first official robot was made with the focus of exhibiting emotion. I wanted 
 Here was my inspiration sketch:
 
 ![](images/sketch.jpg)
-
-## INSTRUCTIONS
-Using the colored buttons, press each to exhibit a different emotion and see the robot move: green for stoic, yellow for happy, blue for sad, red for angry.
 
 ## STRUGGLES
 I had many struggles with this project:
