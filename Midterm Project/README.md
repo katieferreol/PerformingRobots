@@ -14,7 +14,11 @@ Using the colored buttons, press each to exhibit a different emotion and see the
 ## PERFORMANCE
 ![](images/stoic.gif)
 ![](images/happy.gif)
+
 ![](images/sad.gif)
 ![](images/angry.gif)
 
 ## FINAL DEMO
+Here is the demo of the final project: click the picture to be redirected to the video!
+
+[![](images/thumbnail.png)](https://youtu.be/BWFWNwsflnM)
