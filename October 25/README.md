@@ -18,8 +18,8 @@ Drooping eyes, eyebrows furrowed in frustration and sadness
 
 ### Dressing
 
-![](images/eliza.jpg)
-![](images/eliza.jpg)
+![](images/clay.jpg)
+![](images/tule.jpg)
 
 ### Actions
 Pointing her head down in sorrow
