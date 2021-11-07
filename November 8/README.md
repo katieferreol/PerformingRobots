@@ -14,6 +14,11 @@ However, replacing one of the partners with a robot, and suddenly this becomes a
 
 Something that I would like to tackle in my play is the concept of parental disappointment, maybe due to their child not being as "perfect" as they sought them out to be, whether mentally, physically, or even in terms of gender. This is an extremely taboo topic, but apparently is very common amongst new parents (from all the TikToks I watch about "gender disappointment"). Many tend to shame the parents, but do not understand their struggle. 
 
+![](images/gender1.jpg)
+![](images/gender2.jpg)
+
 With this topic, I would try to create a play based off of a robot dog that has been newly adopted into a couple. Set in the future where adoption is a lottery process, they wanted to get a real, fluffy dog, but were disappointed that the adoption agency gave them a robotic replica. The robot dog is happy that it is part of a new family: he runs, wags his tail, and requires all the things a normal dog does. However, we never see the couple warm up to him. A couple of days pass and the couple decides to get a real dog, treating him with love and warmth. They begin to disregard the robot dog, who is seen trying to ask for pets and for food from his owners. As the months pass, we see how his head droops low in sorrow, asking himself what he did wrong. Slowly, he whimpers as he settles on his pillow and powers down forever.
 
 With the protagonoist not only being a robot but also a dog, it allows multiple interpretations of a play but all comes down into the one message of unacceptance and the concept of the Other once more.
+
+![](images/dog.jpg)
