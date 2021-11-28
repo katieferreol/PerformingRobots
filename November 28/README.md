@@ -11,3 +11,7 @@ Using the descriptions we learned in class, this is what I would like the Grumpy
 
 ### EXPRESSIONS
 4. Using the neopixel, I will code an angry face, which I have done for my previous midterm project. Maybe I will do more and add more animation to it.
+
+
+![](images/withclothes.jpg)
+![](images/withoutclothes.jpg)
