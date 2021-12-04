@@ -1,3 +1,5 @@
+# The Freudian Robot: Digital Media and the Future of the Unconscious 
+
 This reading was very interesting to me, as it discussed the various relationship to which us humans can interact with technology, and who truly is the “slave” in current time. Getting into this reading, my first assumption was thinking that Freudian robots where a new type of technology to be introduced, but reading more into it it seems like the author refers to us as the Freudian robots, where we cannot free her/him/itself from the cybernetic unconscious.
 
 The questions asked in the chapter itself are very intellectually stimulating. The one that caught me attention is: ““is there, or will there ever be, enough similarity to us in our humanoid robots that we will decide to treat them in the same moral ways we treat other people and, in varying degrees, animals?” It’s always the question we ask ourselves, and it finally shows us why we should or shouldn’t hold them in the same regard in the first place.
