@@ -4,63 +4,54 @@ const int CSNPIN = 10;
 #include <SPI.h>
 #include <nRF24L01.h>
 #include <RF24.h>
-RF24 radio(CEPIN, CSNPIN);                
+RF24 radio(CEPIN, CSNPIN);                // CE, CSN
 
+// Byte of array representing the address.
+// This is the address where we will send the data.
+// This should be same on the receiving side.
 const byte address[6] = "00001";
 
-// Pins for the directional buttons
+// Pins for the pushbuttons
 const int LEFT_BUTTON = 4;
 const int RIGHT_BUTTON = 7;
 const int UP_BUTTON = 8;
 const int DOWN_BUTTON = 2;
-const int POT1PIN = A1;
-const int POT2PIN = A0;
 
-int value;
+const int pot = A0;
 
 void setup() {
   Serial.begin(9600);
+  boolean retval = radio.begin();   //Starting the Wireless communication
+  Serial.println(retval);
+  radio.openWritingPipe(address);  //destination addres
+  radio.setPALevel(RF24_PA_MIN);   // min or max
+  radio.stopListening();           //This sets the module as transmitter
 
   pinMode(LEFT_BUTTON, INPUT_PULLUP);
   pinMode(RIGHT_BUTTON, INPUT_PULLUP);
   pinMode(UP_BUTTON, INPUT_PULLUP);
   pinMode(DOWN_BUTTON, INPUT_PULLUP);
 
-  boolean retval = radio.begin();
-  radio.openWritingPipe(address);
-  radio.setPALevel(RF24_PA_MIN);
-  radio.stopListening(); 
 }
 
 void loop() {
 
-  static unsigned long timer = 0;
-   unsigned long interval = 1000;
-   if (millis() - timer >= interval)
-   {
-      timer = millis();
-      value = analogRead(POT2PIN);
-      value =  map(analogRead(A0), 0, 1023, 5, 175);
-      Serial.println(value);
-   }
+  int up = !digitalRead(UP_BUTTON) << 0;
+  int down = !digitalRead(DOWN_BUTTON) << 1;
+  int left = !digitalRead(LEFT_BUTTON) << 2;
+  int right = !digitalRead(RIGHT_BUTTON) << 3;
+  
+    int npData = 0;
+    npData = analogRead(pot);
+    npData = map(analogRead(pot), 0, 1023, 5, 175);
+    npData << 8;
+//  Serial.println(npData);
 
-  int left = !digitalRead(LEFT_BUTTON);
-  int right = !digitalRead(RIGHT_BUTTON);
-  int down = !digitalRead(DOWN_BUTTON);
-  int up = !digitalRead(UP_BUTTON);
-
-  int data =  
-    (left << 4) |
-    (up << 3) |
-    (right << 2) |
-    (down << 1) ;
-
+  int data[2];
+  data[0] = up | down | left | right;
+  data[1] = npData;
   if (data) {
-    Serial.println(data, BIN);
+    Serial.println(data[0]);
     radio.write(&data, sizeof(data)) ;
-  }
-   if (value) {
-    Serial.println(value, BIN);
-    radio.write(&value, sizeof(value)) ;
   }
 }
